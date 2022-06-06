@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 body{
-    font-family: 'Plus Jakarta Sans', sans-serif;;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #2C3E58;
+}
+.category-shadow{
+    box-shadow: 0px 8px 26px 0px rgba(0, 0, 0, 0.1);
 }
