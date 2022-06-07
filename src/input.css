@@ -30,3 +30,7 @@ input[type='checkbox'].extra:checked + label .notSelected{
 .var-price{
     @apply text-sm;
 }
+.toggle-primary{
+    border-color: #1CC197;
+    background-color: #1CC197;
+}
