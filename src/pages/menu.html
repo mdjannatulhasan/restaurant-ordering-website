@@ -434,10 +434,10 @@
                 <label for="my-drawer-4" class="drawer-overlay"></label>
                 <div class="menu p-5 pt-6 overflow-y-auto w-80 bg-base-100 text-base-content">
                     <div class="form-control">
-                        <label class="label cursor-pointer justify-center space-x-3 font-bold">
-                            <span class="label-text">Pickup</span>
-                            <input type="checkbox" class="toggle toggle-primary" checked />
-                            <span class="label-text">Delivery</span>
+                        <label class="label cursor-pointer justify-center font-bold">
+                            <input type="checkbox" class="toggle mx-3 toggle-primary" checked />
+                            <span class="label-text-pp">Pickup</span>
+                            <span class="label-text-d">Delivery</span>
                         </label>
                     </div>
                     <div class="flex items-center justify-center mt-6">
@@ -454,7 +454,7 @@
                             </svg>
                         </span>
                     </div>
-                    <div class="text-center mt-5">
+                    <div class="text-center mt-5 hidden">
                         <h4 class="text-xl font-semibold">
                             Your Cart
                         </h4>
@@ -468,6 +468,64 @@
                         </div>
 
                         <button class="bg-primary/90 py-2 w-11/12 rounded-full mt-5 text-white">
+                            Go to checkout<i class="ml-3 fas fa-cart-arrow-down"></i>
+                        </button>
+                    </div>
+                    <div class="text-center mt-8">
+                        <h4 class="text-xl font-semibold">
+                            Your Cart
+                        </h4>
+                        <p class="text-xs text-neutral mt-2">Item has been added to your cart</p>
+
+                        <div class="mb-4">
+                            <div class="cart-item mt-5">
+                                <div class="flex justify-between items-center">
+                                    <h4 class="text-xl text-primary font-semibold">Erna Solberg</h4>
+                                    <div class="price text-sm text-accent/80"> Kr 230.00</div>
+                                </div>
+                                <div class="flex justify-between items-center text-sm mt-1">
+                                    <p class="">Medium</p>
+                                    <div class="quantity flex items-center text-xs">
+                                        <span class="text-primary ">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </span>
+                                        <input type="text" class="outline-success/60 w-10 text-center font-bold mx-1"
+                                            value="1">
+                                        <span class="text-primary"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item mt-5">
+                                <div class="flex justify-between items-center">
+                                    <h4 class="text-xl text-primary font-semibold">Eldorado</h4>
+                                    <div class="price text-sm text-accent/80"> Kr 230.00</div>
+                                </div>
+                                <div class="flex justify-between items-center text-sm mt-1">
+                                    <p class="">Medium</p>
+                                    <div class="quantity flex items-center text-xs">
+                                        <span class="text-primary ">
+                                            <i class="fas fa-minus"></i>
+                                        </span>
+                                        <input type="text" class="outline-success/60 w-10 text-center font-bold mx-1"
+                                            value="2">
+                                        <span class="text-primary"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                </div>
+                                <div class="text-sm mt-1 text-accent/80 text-left">
+                                    <p class="">+ Chicken</p>
+                                    <p class="">+ Bacon</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="flex justify-between text-neutral/80">
+                            <span>Subtotal</span> <span>Kr 0.00</span>
+                        </div>
+                        <div class="flex justify-between mt-3">
+                            <span>Total (incl. mva)</span> <span>Kr 0.00</span>
+                        </div>
+
+                        <button class="bg-success py-2 w-11/12 rounded-full mt-5 text-white">
                             Go to checkout<i class="ml-3 fas fa-cart-arrow-down"></i>
                         </button>
                     </div>

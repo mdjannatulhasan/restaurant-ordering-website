@@ -30,7 +30,28 @@ input[type='checkbox'].extra:checked + label .notSelected{
 .var-price{
     @apply text-sm;
 }
+.label-text-pp{
+    color: #ea5353;
+    order: 1;
+}
 .toggle-primary{
-    border-color: #1CC197;
-    background-color: #1CC197;
+    order: 2;
+}
+.label-text-d{
+order: 3;
+}
+.toggle:checked ~ .label-text-d{
+    color: #ea5353 !important;
+}
+.toggle:checked ~ .label-text-pp{
+    color: #2C3D58 !important;
+}
+
+
+.toggle-primary{
+    border-color: #ea5353;
+    background-color: #ea5353;
+}
+.drawer-side{
+    max-height: 100% !important;
 }

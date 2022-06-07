@@ -1595,13 +1595,6 @@ body[dir="rtl"] .checkbox:checked,
   opacity: 0.5;
 }
 
-.label-text {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  --tw-text-opacity: 1;
-  color: hsl(var(--bc) / var(--tw-text-opacity));
-}
-
 .label a:hover {
   --tw-text-opacity: 1;
   color: hsl(var(--bc) / var(--tw-text-opacity));
@@ -2159,9 +2152,19 @@ body[dir="rtl"] .checkbox:checked,
   margin-right: 1rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .ml-0 {
@@ -2206,6 +2209,18 @@ body[dir="rtl"] .checkbox:checked,
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .inline-block {
@@ -2260,6 +2275,10 @@ body[dir="rtl"] .checkbox:checked,
   width: 91.666667%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -2306,6 +2325,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-y-8 > :not([hidden]) ~ :not([hidden]) {
@@ -2416,10 +2439,6 @@ body[dir="rtl"] .checkbox:checked,
   background-color: hsl(var(--a) / 0.05);
 }
 
-.bg-success\/5 {
-  background-color: hsl(var(--su) / 0.05);
-}
-
 .bg-success\/20 {
   background-color: hsl(var(--su) / 0.2);
 }
@@ -2500,6 +2519,11 @@ body[dir="rtl"] .checkbox:checked,
   padding-bottom: 0.25rem;
 }
 
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
 .pl-0 {
   padding-left: 0px;
 }
@@ -2522,6 +2546,14 @@ body[dir="rtl"] .checkbox:checked,
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -2561,6 +2593,11 @@ body[dir="rtl"] .checkbox:checked,
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -2621,6 +2658,10 @@ body[dir="rtl"] .checkbox:checked,
   color: hsl(var(--n) / 0.8);
 }
 
+.text-accent\/80 {
+  color: hsl(var(--a) / 0.8);
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -2675,9 +2716,34 @@ input[type='checkbox'].extra:checked + label .notSelected{
   line-height: 1.25rem;
 }
 
+.label-text-pp{
+  color: #ea5353;
+  order: 1;
+}
+
 .toggle-primary{
-  border-color: #1CC197;
-  background-color: #1CC197;
+  order: 2;
+}
+
+.label-text-d{
+  order: 3;
+}
+
+.toggle:checked ~ .label-text-d{
+  color: #ea5353 !important;
+}
+
+.toggle:checked ~ .label-text-pp{
+  color: #2C3D58 !important;
+}
+
+.toggle-primary{
+  border-color: #ea5353;
+  background-color: #ea5353;
+}
+
+.drawer-side{
+  max-height: 100% !important;
 }
 
 .hover\:bg-success:hover {
@@ -2724,6 +2790,10 @@ input[type='checkbox'].extra:checked + label .notSelected{
     gap: 0px;
   }
 
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
@@ -2751,6 +2821,11 @@ input[type='checkbox'].extra:checked + label .notSelected{
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:leading-tight {
