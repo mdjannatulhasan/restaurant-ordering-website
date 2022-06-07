@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <script src="https://kit.fontawesome.com/5cbfd0d562.js" crossorigin="anonymous"></script>
+        <link href="../../dist/output.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="drawer drawer-end h-auto">
+            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+            <div class="drawer-content">
+                <nav>
+                    <div class="container">
+                        <div class="navbar bg-base-100  pl-0 ml-0">
+                            <div class="navbar-start">
+                                <div class="dropdown">
+                                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4 6h16M4 12h8m-8 6h16" />
+                                        </svg>
+                                    </label>
+                                    <ul tabindex="0"
+                                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="#">Menu</a></li>
+                                        <li><a href="kontakt.html">Kontakt Oss</a></li>
+                                        <li>
+                                            <label for="my-drawer-4"
+                                                class="drawer-button bg-transparent hover:bg-transparent border-0 btn-primary hover:text-primary">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="text-xl font-bold">Restaurant</a>
+                            </div>
+                            <div class="navbar-end hidden lg:flex">
+                                <ul class="menu menu-horizontal p-0">
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="#">Menu</a></li>
+                                    <li><a href="kontakt.html">Kontakt Oss</a></li>
+                                    <li>
+                                        <label for="my-drawer-4"
+                                            class="drawer-button btn bg-transparent hover:bg-transparent border-0 hover:text-primary text-xl">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <section class="pb-16">
+                    <div class="container">
+                        <div class="bg py-10 lg:py-16 text-center rounded-2xl"
+                            style="background: linear-gradient(0deg, #000000 -27.98%, rgba(40, 41, 50, 0) 100%),url('../../images/menu-bg.png'); background-size: cover;">
+                            <h1 class="text-3xl lg:text-5xl text-white font-bold">Order Recieved</h1>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pb-16">
+                    <div class="container">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+                            <div>
+                                <h2 class="text-4xl font-bold text-primary">Thank you for your order</h2>
+                                <h4 class="mt-4 text-xl font-semibold">Order number: #ORD34243</h4>
+                            </div>
+                            <div>
+                                <h3 class="mt-3 text-2xl font-semibold mb-4">Order Summary:</h3>
+                                <div class="border p-6 rounded-xl">
+                                    <div class="mb-4">
+                                        <div class="cart-item mb-5">
+                                            <div class="flex justify-between items-center">
+                                                <h4 class="font-semibold">Erna Solberg <span class="ml-2">x 1</span>
+                                                </h4>
+                                                <div class="price text-sm text-accent/80"> Kr 230.00</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-item mb-5">
+                                            <div class="flex justify-between items-center">
+                                                <h4 class="font-semibold">Burger <span class="ml-2">x 3</span>
+                                                </h4>
+                                                <div class="price text-sm text-accent/80"> Kr 690.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="my-4">
+                                    <div class="flex justify-between text-neutral/80">
+                                        <span>Subtotal</span> <span>Kr 920.00</span>
+                                    </div>
+                                    <div class="flex justify-between text-neutral/80 my-1">
+                                        <span>Delivery charge</span> <span>Kr 50.00</span>
+                                    </div>
+                                    <div class="flex justify-between text-neutral/80">
+                                        <span>Payment Method</span> <span>Cash on delivery</span>
+                                    </div>
+                                    <div class="flex justify-between mt-3">
+                                        <span>Total (incl. mva)</span> <span>Kr 970.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <div class="drawer-side">
+                <label for="my-drawer-4" class="drawer-overlay"></label>
+                <div class="menu p-5 pt-6 overflow-y-auto w-80 bg-base-100 text-base-content">
+                    <div class="form-control">
+                        <label class="label cursor-pointer justify-center font-bold">
+                            <input type="checkbox" class="toggle mx-3 toggle-primary" checked />
+                            <span class="label-text-pp">Pickup</span>
+                            <span class="label-text-d">Delivery</span>
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-center mt-6">
+                        <span class="bg-success/20 p-3 rounded-full inline-block">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M42.6546 18.544C42.3706 18.199 41.9466 18 41.4996 18H6.49964C6.05264 18 5.62864 18.199 5.34464 18.544C5.05964 18.888 4.94264 19.342 5.02664 19.78L8.25264 36.716C8.83464 39.778 11.5206 42 14.6376 42H33.3626C36.4796 42 39.1656 39.778 39.7486 36.716L42.9746 19.78C43.0576 19.342 42.9396 18.888 42.6546 18.544ZM16.6656 35.991C16.6086 35.997 16.5536 36 16.4976 36C15.7436 36 15.0946 35.433 15.0086 34.666L14.0086 25.666C13.9176 24.843 14.5106 24.101 15.3336 24.009C16.1596 23.922 16.8976 24.511 16.9906 25.334L17.9906 34.334C18.0816 35.157 17.4886 35.899 16.6656 35.991ZM22.9996 34.5C22.9996 35.328 22.3276 36 21.4996 36C20.6716 36 19.9996 35.328 19.9996 34.5V25.5C19.9996 24.672 20.6716 24 21.4996 24C22.3276 24 22.9996 24.672 22.9996 25.5V34.5ZM27.9996 34.5C27.9996 35.328 27.3276 36 26.4996 36C25.6716 36 24.9996 35.328 24.9996 34.5V25.5C24.9996 24.672 25.6716 24 26.4996 24C27.3276 24 27.9996 24.672 27.9996 25.5V34.5ZM33.9906 25.666L32.9906 34.666C32.9046 35.433 32.2556 36 31.5016 36C31.4456 36 31.3906 35.997 31.3336 35.991C30.5106 35.899 29.9176 35.157 30.0086 34.334L31.0086 25.334C31.1006 24.511 31.8406 23.923 32.6656 24.009C33.4886 24.101 34.0816 24.843 33.9906 25.666Z"
+                                    fill="#1DC197" />
+                                <path
+                                    d="M38.7868 19.5L37.2748 11.564C36.8258 9.206 34.7638 7.5 32.3628 7.5H15.6388C13.2378 7.5 11.1758 9.206 10.7268 11.564L9.21484 19.5"
+                                    stroke="#1DC197" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="text-center mt-5 hidden">
+                        <h4 class="text-xl font-semibold">
+                            Your Cart
+                        </h4>
+                        <p class="text-xs text-neutral mt-2">Start adding items from menu to your cart</p>
+                        <hr class="my-4">
+                        <div class="flex justify-between text-neutral/80">
+                            <span>Subtotal</span> <span>Kr 0.00</span>
+                        </div>
+                        <div class="flex justify-between mt-3">
+                            <span>Total (incl. mva)</span> <span>Kr 0.00</span>
+                        </div>
+
+                        <button class="bg-primary/90 py-2 w-11/12 rounded-full mt-5 text-white">
+                            Go to checkout<i class="ml-3 fas fa-cart-arrow-down"></i>
+                        </button>
+                    </div>
+                    <div class="text-center mt-8">
+                        <h4 class="text-xl font-semibold">
+                            Your Cart
+                        </h4>
+                        <p class="text-xs text-neutral mt-2">Item has been added to your cart</p>
+
+                        <div class="mb-4">
+                            <div class="cart-item mt-5">
+                                <div class="flex justify-between items-center">
+                                    <h4 class="text-xl text-primary font-semibold">Erna Solberg</h4>
+                                    <div class="price text-sm text-accent/80"> Kr 230.00</div>
+                                </div>
+                                <div class="flex justify-between items-center text-sm mt-1">
+                                    <p class="">Medium</p>
+                                    <div class="quantity flex items-center text-xs">
+                                        <span class="text-primary ">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </span>
+                                        <input type="text" class="outline-success/60 w-10 text-center font-bold mx-1"
+                                            value="1">
+                                        <span class="text-primary"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item mt-5">
+                                <div class="flex justify-between items-center">
+                                    <h4 class="text-xl text-primary font-semibold">Eldorado</h4>
+                                    <div class="price text-sm text-accent/80"> Kr 230.00</div>
+                                </div>
+                                <div class="flex justify-between items-center text-sm mt-1">
+                                    <p class="">Medium</p>
+                                    <div class="quantity flex items-center text-xs">
+                                        <span class="text-primary ">
+                                            <i class="fas fa-minus"></i>
+                                        </span>
+                                        <input type="text" class="outline-success/60 w-10 text-center font-bold mx-1"
+                                            value="2">
+                                        <span class="text-primary"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                </div>
+                                <div class="text-sm mt-1 text-accent/80 text-left">
+                                    <p class="">+ Chicken</p>
+                                    <p class="">+ Bacon</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="flex justify-between text-neutral/80">
+                            <span>Subtotal</span> <span>Kr 0.00</span>
+                        </div>
+                        <div class="flex justify-between mt-3">
+                            <span>Total (incl. mva)</span> <span>Kr 0.00</span>
+                        </div>
+
+                        <button class="bg-success py-2 w-11/12 rounded-full mt-5 text-white">
+                            Go to checkout<i class="ml-3 fas fa-cart-arrow-down"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="bg-accent ">
+            <div class="container">
+                <div class="footer py-10 text-white">
+                    <div class="">
+                        <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd" class="fill-current">
+                            <path
+                                d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                            </path>
+                        </svg>
+                        <p>Restaurant Ordering System Ltd.<br>Providing reliable tech since 1992</p>
+                    </div>
+                    <div>
+                        <span class="footer-title">Services</span>
+                        <a class="link link-hover">Branding</a>
+                        <a class="link link-hover">Design</a>
+                        <a class="link link-hover">Marketing</a>
+                        <a class="link link-hover">Advertisement</a>
+                    </div>
+                    <div>
+                        <span class="footer-title">Company</span>
+                        <a class="link link-hover">About us</a>
+                        <a class="link link-hover">Contact</a>
+                        <a class="link link-hover">Jobs</a>
+                        <a class="link link-hover">Press kit</a>
+                    </div>
+                    <div>
+                        <span class="footer-title">Legal</span>
+                        <a class="link link-hover">Terms of use</a>
+                        <a class="link link-hover">Privacy policy</a>
+                        <a class="link link-hover">Cookie policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../js/main.js"></script>
+    </body>
+
+</html>
