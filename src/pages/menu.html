@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <script src="https://kit.fontawesome.com/5cbfd0d562.js" crossorigin="anonymous"></script>
+        <link href="../../dist/output.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="drawer drawer-end h-auto">
+            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+            <div class="drawer-content">
+                <nav>
+                    <div class="container">
+                        <div class="navbar bg-base-100  pl-0 ml-0">
+                            <div class="navbar-start">
+                                <div class="dropdown">
+                                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4 6h16M4 12h8m-8 6h16" />
+                                        </svg>
+                                    </label>
+                                    <ul tabindex="0"
+                                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="#">Menu</a></li>
+                                        <li><a href="kontakt.html">Kontakt Oss</a></li>
+                                        <li>
+                                            <label for="my-drawer-4"
+                                                class="drawer-button bg-transparent hover:bg-transparent border-0 btn-primary hover:text-primary">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="text-xl font-bold">Restaurant</a>
+                            </div>
+                            <div class="navbar-end hidden lg:flex">
+                                <ul class="menu menu-horizontal p-0">
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="#">Menu</a></li>
+                                    <li><a href="kontakt.html">Kontakt Oss</a></li>
+                                    <li>
+                                        <label for="my-drawer-4"
+                                            class="drawer-button btn bg-transparent hover:bg-transparent border-0 hover:text-primary">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <section class="pb-16">
+                    <div class="container">
+                        <div class="bg p-7 lg:pt-32 rounded-2xl"
+                            style="background: linear-gradient(0deg, #000000 -27.98%, rgba(40, 41, 50, 0) 100%),url('../../images/menu-bg.png'); background-size: cover;">
+                            <h1 class="text-5xl text-white font-bold">Demo Restaurant</h1>
+                            <p class="text-white/80 max-w-md mt-4 text-lg">The chefs at Hot Wok unite the impulses of
+                                Cantonese
+                                with
+                                Malaysian
+                                cuisine.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pb-16">
+                    <div class="container">
+                        <h2 class="text-2xl font-semibold">Categories</h2>
+                        <div class="grid grid-cols-2 gap-4 lg:flex mt-7 lg:gap-0 lg:space-x-5 lg:flex-wrap">
+                            <div class="font-semibold flex items-center category-shadow p-1 rounded-full bg-white">
+                                <span class="rounded-full bg-secondary p-3">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.9173 13.9108V12.2915V12.1492C22.1827 12.0121 22.4213 11.819 22.6103 11.5699C23.049 10.9942 23.1505 10.2481 22.8816 9.57492L22.4487 8.494C22.4802 8.40359 22.5007 8.3085 22.5007 8.20817C22.5007 3.98309 19.1885 0.916504 14.6257 0.916504H9.37565C4.81282 0.916504 1.50065 3.98309 1.50065 8.20817C1.50065 8.3085 1.52107 8.40359 1.55257 8.49342L1.11973 9.5755C0.850818 10.2481 0.952318 10.9942 1.39098 11.5699C1.57998 11.819 1.81857 12.0115 2.08398 12.1486V13.9114C1.06782 14.2737 0.333984 15.2362 0.333984 16.3754C0.333984 17.2837 0.797734 18.0846 1.50065 18.5559V18.7082C1.50065 21.1208 3.46298 23.0832 5.87565 23.0832H18.1257C20.5383 23.0832 22.5007 21.1208 22.5007 18.7082V18.5553C23.2036 18.084 23.6673 17.2825 23.6673 16.3748C23.6673 15.2356 22.9335 14.2737 21.9173 13.9108ZM11.1257 4.99984C11.6087 4.99984 12.0007 5.39184 12.0007 5.87484C12.0007 6.35784 11.6087 6.74984 11.1257 6.74984C10.6427 6.74984 10.2507 6.35784 10.2507 5.87484C10.2507 5.39184 10.6427 4.99984 11.1257 4.99984ZM8.20898 3.83317C8.69199 3.83317 9.08399 4.22517 9.08399 4.70817C9.08399 5.19117 8.69199 5.58317 8.20898 5.58317C7.72599 5.58317 7.33398 5.19117 7.33398 4.70817C7.33398 4.22517 7.72599 3.83317 8.20898 3.83317ZM2.74432 10.2259L3.18823 9.117C3.19232 9.10592 3.19348 9.09425 3.19757 9.08317H20.8037C20.8078 9.09425 20.809 9.10592 20.8137 9.117L21.2576 10.2248C21.3107 10.3583 21.2558 10.461 21.2191 10.51C21.1823 10.5596 21.0954 10.6436 20.9548 10.6232L18.3252 10.3315C17.7097 10.2603 17.0908 10.3723 16.5355 10.65L15.755 11.0403C15.3822 11.2252 14.9477 11.2438 14.5621 11.0898L13.4117 10.6296C12.7094 10.3484 11.9254 10.3251 11.2056 10.5648L9.5209 11.1266C9.12074 11.2596 8.6844 11.2129 8.32215 11.0012L7.8619 10.7305C7.26865 10.3823 6.5669 10.2353 5.8844 10.3088L3.04765 10.6232C2.9024 10.6442 2.82073 10.559 2.78398 10.5106C2.74607 10.461 2.69123 10.3595 2.74432 10.2259ZM21.0423 17.2498H2.95898C2.47657 17.2498 2.08398 16.8573 2.08398 16.3748C2.08398 15.8924 2.47657 15.4998 2.95898 15.4998H3.54232H21.0423C21.5247 15.4998 21.9173 15.8924 21.9173 16.3748C21.9173 16.8573 21.5247 17.2498 21.0423 17.2498Z"
+                                            fill="#2D4059" />
+                                    </svg>
+                                </span> <span class="pl-3 pr-4">Burger</span>
+                            </div>
+                            <div class="font-semibold flex items-center category-shadow p-1 rounded-full bg-white">
+                                <span class="rounded-full bg-secondary p-3">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.3156 9.04582C13.7457 9.85665 12.8129 10.3542 11.8119 10.3542C10.1261 10.3542 8.7547 8.98457 8.75003 7.29932L4.85803 16.7861C5.20745 16.5072 5.64378 16.3334 6.12445 16.3334C7.25028 16.3334 8.16611 17.2492 8.16611 18.3751C8.16611 19.5009 7.25028 20.4167 6.12445 20.4167C5.08145 20.4167 4.22861 19.6275 4.10728 18.6172L2.81986 21.7549C2.41095 22.7518 2.63028 23.845 3.39211 24.6074C3.90078 25.1161 4.55586 25.3827 5.23195 25.3827C5.5697 25.3827 5.91211 25.3162 6.24403 25.1797L20.4371 19.3568C20.4307 19.3212 20.4161 19.288 20.4161 19.2501C20.4161 15.5704 17.6954 11.4474 14.3156 9.04582ZM15.5494 17.524C15.6048 17.72 15.6439 17.923 15.6439 18.1365C15.6439 19.3936 14.6207 20.4167 13.3636 20.4167C12.1065 20.4167 11.0828 19.3936 11.0828 18.1365C11.0828 16.9716 11.9648 16.0184 13.0941 15.8831C13.0854 15.8078 13.0714 15.7343 13.0714 15.6573C13.0714 14.5828 13.9458 13.7084 15.0203 13.7084C16.0948 13.7084 16.9692 14.5828 16.9692 15.6573C16.9692 16.5469 16.3654 17.2912 15.5494 17.524Z"
+                                            fill="#2D4059" />
+                                        <path
+                                            d="M11.3741 2.3335C11.0195 2.3335 10.6992 2.54758 10.5645 2.87658L9.3418 5.85741C15.0725 6.29375 21.3275 12.9181 21.5708 18.8926L25.1233 17.4354C25.4517 17.3001 25.6658 16.9798 25.6658 16.6252C25.6658 8.74433 19.255 2.3335 11.3741 2.3335Z"
+                                            fill="#2D4059" />
+                                    </svg>
+
+                                </span> <span class="pl-3 pr-4">Pizza</span>
+                            </div>
+                            <div class="font-semibold flex items-center category-shadow p-1 rounded-full bg-white">
+                                <span class="rounded-full bg-secondary p-3">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.04102 10.5C9.52402 10.5 9.91602 10.108 9.91602 9.625V8.75V7V5.31067V3.53675V2.625C9.91602 2.142 9.52402 1.75 9.04102 1.75C8.55802 1.75 8.16602 2.142 8.16602 2.625V3.82842V5.60233V7V8.75V9.625C8.16602 10.108 8.55802 10.5 9.04102 10.5Z"
+                                            fill="black" />
+                                        <path
+                                            d="M25.0704 1.8974C24.9911 1.42082 24.5408 1.10057 24.063 1.17873L15.166 2.66157V4.43548L24.3518 2.90423C24.8278 2.82548 25.1503 2.37398 25.0704 1.8974Z"
+                                            fill="black" />
+                                        <path
+                                            d="M25.0827 7.875C25.0827 7.392 24.6907 7 24.2077 7H15.166V8.75H24.2077C24.6907 8.75 25.0827 8.358 25.0827 7.875Z"
+                                            fill="black" />
+                                        <path
+                                            d="M12.541 9.9165C13.024 9.9165 13.416 9.5245 13.416 9.0415V8.74984V6.99984V4.72717V2.95325V2.0415C13.416 1.5585 13.024 1.1665 12.541 1.1665C12.058 1.1665 11.666 1.5585 11.666 2.0415V3.24492V5.01884V6.99984V8.74984V9.0415C11.666 9.5245 12.058 9.9165 12.541 9.9165Z"
+                                            fill="black" />
+                                        <path
+                                            d="M24.791 15.1668H22.8001C20.6721 13.1403 18.3749 12.1142 15.9634 12.1877C12.5929 12.2642 10.0764 14.3857 9.26152 15.1668H6.41602V8.75016V7.00016V5.89416V4.12025V3.2085C6.41602 2.7255 6.02402 2.3335 5.54102 2.3335C5.05802 2.3335 4.66602 2.7255 4.66602 3.2085V4.41191L3.0636 4.67908C2.5876 4.75783 2.26502 5.20933 2.34493 5.68591C2.4161 6.1135 2.78652 6.41683 3.20652 6.41683C3.25435 6.41683 3.30277 6.41275 3.35177 6.40458L4.66602 6.18583V7.00016H3.20768C2.72468 7.00016 2.33268 7.39216 2.33268 7.87516C2.33268 8.35816 2.72468 8.75016 3.20768 8.75016H4.66602V15.1668H3.20768C2.08185 15.1668 1.16602 16.0827 1.16602 17.2085C1.16602 22.5157 5.48385 26.8335 10.791 26.8335H17.2077C22.5148 26.8335 26.8327 22.5157 26.8327 17.2085C26.8327 16.0827 25.9168 15.1668 24.791 15.1668ZM12.1368 15.1668C13.1413 14.5514 14.4847 13.9681 16.0177 13.9372C17.3885 13.9121 18.7185 14.3309 20.0071 15.1668H12.1368Z"
+                                            fill="black" />
+                                    </svg>
+
+                                </span> <span class="pl-3 pr-4">Noodles</span>
+                            </div>
+                            <div class="font-semibold flex items-center category-shadow p-1 rounded-full bg-white">
+                                <span class="rounded-full bg-secondary p-3">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M26.7076 15.0088L23.2076 9.17548C23.1598 9.09556 23.0986 9.02964 23.0315 8.97131C22.6226 8.45623 22.1331 8.04848 21.6875 7.74514L23.5874 6.22498C23.9642 5.92281 24.0255 5.37273 23.7233 4.99531C23.4223 4.61848 22.8728 4.55664 22.4936 4.85939L18.3141 8.20306L21.4267 3.70673C21.7021 3.30948 21.6029 2.76464 21.2051 2.48931C20.809 2.21398 20.263 2.31314 19.9876 2.71098L18.4091 4.99123C17.4851 4.25681 16.5127 3.90973 15.5135 3.95931C14.2552 4.02931 13.3032 4.73281 12.8115 5.19014C11.1076 4.99123 10.0815 5.67606 9.51506 6.31889C9.18315 6.69573 8.70948 6.92731 8.2154 6.95473C6.77748 7.03581 5.68081 7.52173 4.95223 8.39848C4.88281 8.46206 4.8204 8.53498 4.77256 8.62248L4.74748 8.66914C4.6139 8.86573 4.50773 9.06756 4.42081 9.26881L1.27315 15.0397C1.04156 15.4644 1.1979 15.9958 1.62198 16.2268C1.75498 16.2991 1.89848 16.3336 2.04023 16.3336C2.34998 16.3336 2.6504 16.1691 2.80848 15.878L4.6349 12.5296L8.38865 23.3207C8.75556 24.3748 9.7519 25.0836 10.8684 25.0836H17.6613C18.8245 25.0836 19.8336 24.3357 20.1726 23.2227L23.3441 12.8026L25.2079 15.9089C25.3712 16.1819 25.6611 16.3336 25.9581 16.3336C26.1115 16.3336 26.2666 16.2939 26.4078 16.2087C26.822 15.9602 26.9567 15.4224 26.7076 15.0088ZM21.1782 11.6669L19.7508 13.3877C19.3681 13.7774 18.8391 14.0002 18.2925 14.0002H10.183C9.66731 14.0002 9.1744 13.8077 8.82731 13.4869L7.04173 11.6669H21.1782ZM21.544 9.91689H18.9726L20.2367 8.90598C20.6042 9.10898 21.1316 9.45139 21.544 9.91689ZM8.31281 8.70239C9.27065 8.64931 10.1865 8.20306 10.8276 7.47681C11.2726 6.97223 11.9621 6.80423 12.8774 6.97106C12.9888 7.32514 13.3166 7.58356 13.7075 7.58356C14.1905 7.58356 14.5825 7.19156 14.5825 6.70856C14.5825 6.50148 14.5078 6.31364 14.3871 6.16373C14.7044 5.94381 15.1285 5.73031 15.6226 5.70581C16.203 5.68714 16.805 5.92689 17.4116 6.43206L15.16 9.68473C15.1611 9.66489 15.1658 9.64564 15.1658 9.62523C15.1658 9.14223 14.7738 8.75023 14.2908 8.75023C13.8078 8.75023 13.4158 9.14223 13.4158 9.62523C13.4158 9.72789 13.4368 9.82531 13.4695 9.91689H6.05998L6.20406 9.65323C6.23556 9.60656 6.2624 9.55873 6.29915 9.51439C6.70398 9.02789 7.38181 8.75431 8.31281 8.70239Z"
+                                            fill="black" />
+                                    </svg>
+
+                                </span> <span class="pl-3 pr-4">Chinese</span>
+                            </div>
+                            <div class="font-semibold flex items-center category-shadow p-1 rounded-full bg-white">
+                                <span class="rounded-full bg-secondary p-3">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.0423 9H7.33398" stroke="black" stroke-width="3"
+                                            stroke-miterlimit="10" stroke-linecap="round" />
+                                        <path
+                                            d="M5.86719 12.5L7.4276 23.9392C7.6026 25.2342 8.7226 26.2083 10.0293 26.2083H18.0559C19.3626 26.2083 20.4826 25.2342 20.6576 23.9392L22.218 12.5H5.86719ZM13.3589 18.8665L12.5341 19.6913C12.0785 20.1469 11.34 20.1469 10.8844 19.6913L10.0596 18.8665C9.60402 18.4109 9.60402 17.6724 10.0596 17.2168L10.8844 16.392C11.34 15.9364 12.0785 15.9364 12.5341 16.392L13.3589 17.2168C13.8145 17.6724 13.8145 18.4109 13.3589 18.8665ZM17.5426 21.5417C17.5426 22.1862 17.0205 22.7083 16.3759 22.7083H15.2093C14.5647 22.7083 14.0426 22.1862 14.0426 21.5417V20.375C14.0426 19.7304 14.5647 19.2083 15.2093 19.2083H16.3759C17.0205 19.2083 17.5426 19.7304 17.5426 20.375V21.5417Z"
+                                            fill="black" />
+                                        <path
+                                            d="M21.3333 8.99984H20.9367C20.3802 5.69059 17.509 3.1665 14.0417 3.1665C10.5743 3.1665 7.70317 5.69059 7.14667 8.99984H6.75C5.78342 8.99984 5 9.78325 5 10.7498C5 11.7164 5.78342 12.4998 6.75 12.4998H21.3333C22.2999 12.4998 23.0833 11.7164 23.0833 10.7498C23.0833 9.78325 22.2999 8.99984 21.3333 8.99984Z"
+                                            stroke="black" stroke-width="3" stroke-miterlimit="10"
+                                            stroke-linecap="round" />
+                                        <path d="M14.041 9L16.9577 2" stroke="black" stroke-width="3"
+                                            stroke-miterlimit="10" stroke-linecap="round" />
+                                    </svg>
+
+                                </span> <span class="pl-3 pr-4">Drinks</span>
+                            </div>
+                            <div class="font-semibold flex items-center category-shadow p-1 rounded-full bg-white">
+                                <span class="rounded-full bg-secondary p-3">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.9173 13.9108V12.2915V12.1492C22.1827 12.0121 22.4213 11.819 22.6103 11.5699C23.049 10.9942 23.1505 10.2481 22.8816 9.57492L22.4487 8.494C22.4802 8.40359 22.5007 8.3085 22.5007 8.20817C22.5007 3.98309 19.1885 0.916504 14.6257 0.916504H9.37565C4.81282 0.916504 1.50065 3.98309 1.50065 8.20817C1.50065 8.3085 1.52107 8.40359 1.55257 8.49342L1.11973 9.5755C0.850818 10.2481 0.952318 10.9942 1.39098 11.5699C1.57998 11.819 1.81857 12.0115 2.08398 12.1486V13.9114C1.06782 14.2737 0.333984 15.2362 0.333984 16.3754C0.333984 17.2837 0.797734 18.0846 1.50065 18.5559V18.7082C1.50065 21.1208 3.46298 23.0832 5.87565 23.0832H18.1257C20.5383 23.0832 22.5007 21.1208 22.5007 18.7082V18.5553C23.2036 18.084 23.6673 17.2825 23.6673 16.3748C23.6673 15.2356 22.9335 14.2737 21.9173 13.9108ZM11.1257 4.99984C11.6087 4.99984 12.0007 5.39184 12.0007 5.87484C12.0007 6.35784 11.6087 6.74984 11.1257 6.74984C10.6427 6.74984 10.2507 6.35784 10.2507 5.87484C10.2507 5.39184 10.6427 4.99984 11.1257 4.99984ZM8.20898 3.83317C8.69199 3.83317 9.08399 4.22517 9.08399 4.70817C9.08399 5.19117 8.69199 5.58317 8.20898 5.58317C7.72599 5.58317 7.33398 5.19117 7.33398 4.70817C7.33398 4.22517 7.72599 3.83317 8.20898 3.83317ZM2.74432 10.2259L3.18823 9.117C3.19232 9.10592 3.19348 9.09425 3.19757 9.08317H20.8037C20.8078 9.09425 20.809 9.10592 20.8137 9.117L21.2576 10.2248C21.3107 10.3583 21.2558 10.461 21.2191 10.51C21.1823 10.5596 21.0954 10.6436 20.9548 10.6232L18.3252 10.3315C17.7097 10.2603 17.0908 10.3723 16.5355 10.65L15.755 11.0403C15.3822 11.2252 14.9477 11.2438 14.5621 11.0898L13.4117 10.6296C12.7094 10.3484 11.9254 10.3251 11.2056 10.5648L9.5209 11.1266C9.12074 11.2596 8.6844 11.2129 8.32215 11.0012L7.8619 10.7305C7.26865 10.3823 6.5669 10.2353 5.8844 10.3088L3.04765 10.6232C2.9024 10.6442 2.82073 10.559 2.78398 10.5106C2.74607 10.461 2.69123 10.3595 2.74432 10.2259ZM21.0423 17.2498H2.95898C2.47657 17.2498 2.08398 16.8573 2.08398 16.3748C2.08398 15.8924 2.47657 15.4998 2.95898 15.4998H3.54232H21.0423C21.5247 15.4998 21.9173 15.8924 21.9173 16.3748C21.9173 16.8573 21.5247 17.2498 21.0423 17.2498Z"
+                                            fill="#2D4059" />
+                                    </svg>
+                                </span> <span class="pl-3 pr-4">Burger</span>
+                            </div>
+                            <div class="font-semibold flex items-center category-shadow p-1 rounded-full bg-white">
+                                <span class="rounded-full bg-secondary p-3">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.375 12.8335C11.8582 12.8335 12.25 12.4417 12.25 11.9585C12.25 11.4752 11.8582 11.0835 11.375 11.0835C10.8918 11.0835 10.5 11.4752 10.5 11.9585C10.5 12.4417 10.8918 12.8335 11.375 12.8335Z"
+                                            fill="black" />
+                                        <path
+                                            d="M18.375 13.4165C18.8582 13.4165 19.25 13.0248 19.25 12.5415C19.25 12.0583 18.8582 11.6665 18.375 11.6665C17.8918 11.6665 17.5 12.0583 17.5 12.5415C17.5 13.0248 17.8918 13.4165 18.375 13.4165Z"
+                                            fill="black" />
+                                        <path
+                                            d="M24.791 14.5833H24.4527C24.2281 12.2873 23.1093 10.5804 21.2624 9.62553L26.6297 3.18494C26.9388 2.81394 26.8887 2.26211 26.5177 1.95294C26.1473 1.64378 25.5954 1.69336 25.2857 2.06494L19.5095 8.99669C19.4757 8.98911 19.4436 8.97919 19.4092 8.97219L22.6426 3.04436C22.8742 2.61969 22.7178 2.08828 22.2938 1.85728C21.8685 1.62453 21.3365 1.78144 21.1067 2.20611L17.7898 8.28678C17.2818 7.18369 16.1664 6.41661 14.8743 6.41661C13.6429 6.41661 12.5556 7.10844 12.0195 8.16719C11.9985 8.16661 11.9781 8.16661 11.9577 8.16661C10.4498 8.16661 9.06085 8.83919 8.26693 9.91894C5.28902 9.98544 3.61368 11.6357 3.50927 14.5833H3.20768C2.08185 14.5833 1.16602 15.4991 1.16602 16.6249C1.16602 21.9321 5.48385 26.2499 10.791 26.2499H17.2077C22.5148 26.2499 26.8327 21.9321 26.8327 16.6249C26.8327 15.4991 25.9168 14.5833 24.791 14.5833ZM8.45768 11.6666C8.5306 11.6666 8.60235 11.6724 8.67352 11.6783C9.03227 11.7045 9.35777 11.5202 9.51993 11.2075C9.92535 10.4235 10.882 9.91661 11.9577 9.91661C12.1239 9.91661 12.2919 9.93003 12.4716 9.95803C12.9266 10.0304 13.3548 9.73928 13.4592 9.29303C13.6143 8.62978 14.1965 8.16661 14.8743 8.16661C15.6788 8.16661 16.3327 8.82053 16.3327 9.62494C16.3327 10.1079 16.7247 10.4999 17.2077 10.4999C19.5433 10.4999 22.2879 11.2402 22.6928 14.5833H15.1123C15.145 14.4917 15.166 14.3943 15.166 14.2916C15.166 13.8086 14.774 13.4166 14.291 13.4166C13.808 13.4166 13.416 13.8086 13.416 14.2916C13.416 14.3943 13.437 14.4917 13.4697 14.5833H9.86235C9.89502 14.4917 9.91602 14.3943 9.91602 14.2916C9.91602 13.8086 9.52402 13.4166 9.04102 13.4166C8.55802 13.4166 8.16602 13.8086 8.16602 14.2916C8.16602 14.3943 8.18702 14.4917 8.21968 14.5833H5.26685C5.3561 12.5784 6.3431 11.6666 8.45768 11.6666Z"
+                                            fill="black" />
+                                    </svg>
+
+                                </span> <span class="pl-3 pr-4">Rice</span>
+                            </div>
+                            <div class="font-semibold flex items-center category-shadow p-1 rounded-full bg-white">
+                                <span class="rounded-full bg-secondary p-3">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.9173 13.9108V12.2915V12.1492C22.1827 12.0121 22.4213 11.819 22.6103 11.5699C23.049 10.9942 23.1505 10.2481 22.8816 9.57492L22.4487 8.494C22.4802 8.40359 22.5007 8.3085 22.5007 8.20817C22.5007 3.98309 19.1885 0.916504 14.6257 0.916504H9.37565C4.81282 0.916504 1.50065 3.98309 1.50065 8.20817C1.50065 8.3085 1.52107 8.40359 1.55257 8.49342L1.11973 9.5755C0.850818 10.2481 0.952318 10.9942 1.39098 11.5699C1.57998 11.819 1.81857 12.0115 2.08398 12.1486V13.9114C1.06782 14.2737 0.333984 15.2362 0.333984 16.3754C0.333984 17.2837 0.797734 18.0846 1.50065 18.5559V18.7082C1.50065 21.1208 3.46298 23.0832 5.87565 23.0832H18.1257C20.5383 23.0832 22.5007 21.1208 22.5007 18.7082V18.5553C23.2036 18.084 23.6673 17.2825 23.6673 16.3748C23.6673 15.2356 22.9335 14.2737 21.9173 13.9108ZM11.1257 4.99984C11.6087 4.99984 12.0007 5.39184 12.0007 5.87484C12.0007 6.35784 11.6087 6.74984 11.1257 6.74984C10.6427 6.74984 10.2507 6.35784 10.2507 5.87484C10.2507 5.39184 10.6427 4.99984 11.1257 4.99984ZM8.20898 3.83317C8.69199 3.83317 9.08399 4.22517 9.08399 4.70817C9.08399 5.19117 8.69199 5.58317 8.20898 5.58317C7.72599 5.58317 7.33398 5.19117 7.33398 4.70817C7.33398 4.22517 7.72599 3.83317 8.20898 3.83317ZM2.74432 10.2259L3.18823 9.117C3.19232 9.10592 3.19348 9.09425 3.19757 9.08317H20.8037C20.8078 9.09425 20.809 9.10592 20.8137 9.117L21.2576 10.2248C21.3107 10.3583 21.2558 10.461 21.2191 10.51C21.1823 10.5596 21.0954 10.6436 20.9548 10.6232L18.3252 10.3315C17.7097 10.2603 17.0908 10.3723 16.5355 10.65L15.755 11.0403C15.3822 11.2252 14.9477 11.2438 14.5621 11.0898L13.4117 10.6296C12.7094 10.3484 11.9254 10.3251 11.2056 10.5648L9.5209 11.1266C9.12074 11.2596 8.6844 11.2129 8.32215 11.0012L7.8619 10.7305C7.26865 10.3823 6.5669 10.2353 5.8844 10.3088L3.04765 10.6232C2.9024 10.6442 2.82073 10.559 2.78398 10.5106C2.74607 10.461 2.69123 10.3595 2.74432 10.2259ZM21.0423 17.2498H2.95898C2.47657 17.2498 2.08398 16.8573 2.08398 16.3748C2.08398 15.8924 2.47657 15.4998 2.95898 15.4998H3.54232H21.0423C21.5247 15.4998 21.9173 15.8924 21.9173 16.3748C21.9173 16.8573 21.5247 17.2498 21.0423 17.2498Z"
+                                            fill="#2D4059" />
+                                    </svg>
+                                </span> <span class="pl-3 pr-4">Burger</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pb-16">
+                    <div class="container">
+                        <div class="cat-wrapper">
+                            <h2 class="text-4xl font-semibold">Burger</h2>
+                            <div class="grid grid-cols-1 lg:grid-cols-2 mt-8 gap-6">
+                                <div class="item grid grid-cols-6 category-shadow rounded-2xl relative overflow-hidden">
+                                    <div class="col-span-4 p-5 flex flex-col justify-between">
+                                        <div>
+                                            <div class="item-number text-lg font-medium text-neutral">
+                                                08.
+                                            </div>
+                                            <div class="item-name text-2xl font-semibold">
+                                                Erna Solberg
+                                            </div>
+                                            <div class="ingredients text-lg text-neutral mt-3">
+                                                Tomato sauce, cheese, ham, pineapple
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span class="allergens text-primary text-sm">Allergens: Milk, Celery,
+                                                Wheat</span>
+                                            <span class="price"> Kr 400.00</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-span-2">
+                                        <img class="w-full" src="../../images/item-image.png" alt="">
+                                    </div>
+                                    <label for="my-modal-3"
+                                        class="absolute right-3 bottom-3 bg-primary py-2 px-3 rounded-md text-white cursor-pointer">
+                                        <i class="fas fa-plus"></i>
+                                    </label>
+                                </div>
+                                <div class="item grid grid-cols-6 category-shadow rounded-2xl relative overflow-hidden">
+                                    <div class="col-span-4 p-5 flex flex-col justify-between">
+                                        <div>
+                                            <div class="item-number text-lg font-medium text-neutral">
+                                                08.
+                                            </div>
+                                            <div class="item-name text-2xl font-semibold">
+                                                Erna Solberg
+                                            </div>
+                                            <div class="ingredients text-lg text-neutral mt-3">
+                                                Tomato sauce, cheese, ham, pineapple
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span class="allergens text-primary text-sm">Allergens: Milk, Celery,
+                                                Wheat</span>
+                                            <span class="price"> Kr 400.00</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-span-2">
+                                        <img class="w-full" src="../../images/item-image.png" alt="">
+                                    </div>
+                                    <label for="my-modal-3"
+                                        class="absolute right-3 bottom-3 bg-primary py-2 px-3 rounded-md text-white cursor-pointer">
+                                        <i class="fas fa-plus"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+                <div class="modal">
+                    <div class="modal-box p-0 relative">
+                        <label for="my-modal-3"
+                            class="btn btn-sm btn-circle bg-success border-0 text-white hover:bg-primary absolute right-2 top-2">✕</label>
+                        <div>
+                            <img class="w-full" src="../../images/item-open.png" alt="">
+                        </div>
+                        <div class="p-7">
+                            <div class="item-number text-lg font-medium text-neutral">
+                                08.
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="item-name text-2xl font-semibold">
+                                    Erna Solberg
+                                </div>
+                                <span class="price text-primary font-bold"> Kr 400.00</span>
+                            </div>
+
+                            <div class="ingredients text-lg text-neutral my-3">
+                                Tomato sauce, cheese, ham, pineapple
+                            </div>
+                            <div class="allergens text-primary text-sm">
+                                Allergens: Milk, Celery, Wheat
+                            </div>
+                            <hr class="my-4">
+                            <div class="">
+                                <div>
+                                    <div class="flex justify-between items-center mb-2">
+                                        <h4 class="text-lg font-semibold">Size</h4>
+                                        <span class="bg-success/10 text-success rounded-full px-5 py-1 text-sm">1
+                                            required</span>
+                                    </div>
+                                    <div class="size-buttons">
+                                        <div class="flex items-center justify-between">
+                                            <input type="radio" class="hidden size" name="size" id="medium">
+                                            <label for="medium" class="mt-2">
+                                                <i class="selected mr-2 fas fa-dot-circle"></i>
+                                                <i class="notSelected mr-2 fas fa-circle"></i> Medium
+                                            </label>
+                                            <div class="var-price">+ Kr 350</div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <input type="radio" class="hidden size" name="size" id="stor">
+                                            <label for="stor" class="mt-2">
+                                                <i class="selected mr-2 fas fa-dot-circle"></i>
+                                                <i class="notSelected mr-2 fas fa-circle"></i> Stor
+                                            </label>
+                                            <div class="var-price">+ Kr 450</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-6">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <h4 class="text-lg font-semibold">Extra Meat</h4>
+                                        <span
+                                            class="bg-accent/5 text-neutral/70 rounded-full px-5 py-1 text-sm">Optional</span>
+                                    </div>
+                                    <div class="size-buttons">
+                                        <div class="flex items-center justify-between">
+                                            <input type="checkbox" class="hidden extra" name="chicken" id="chicken">
+                                            <label for="chicken" class="mt-2">
+                                                <i class="selected mr-2 fas fa-check-square"></i>
+                                                <i class="notSelected mr-2 fas fa-square"></i> Chicken
+                                            </label>
+                                            <div class="var-price">+ Kr 35</div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <input type="checkbox" class="hidden extra" name="bacon" id="bacon">
+                                            <label for="bacon" class="mt-2">
+                                                <i class="selected mr-2 fas fa-check-square"></i>
+                                                <i class="notSelected mr-2 fas fa-square"></i> Bacon
+                                            </label>
+                                            <div class="var-price">+ Kr 45</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-6">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <h4 class="text-lg font-semibold">Special Instruction</h4>
+                                    </div>
+                                    <textarea name="special-instruction"
+                                        class="outline-primary/60 w-full border p-2 rounded-lg mt-2" rows="3"
+                                        placeholder="e.g. No Mayo"></textarea>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div class="flex items-center justify-between">
+                                <div class="quantity flex items-center"><span class="text-success text-2xl"><i
+                                            class="fas fa-minus"></i></span>
+                                    <input type="text"
+                                        class="outline-success/60 text-2xl w-14 text-center font-bold mx-4" value="2">
+                                    <span class="text-success text-2xl"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <button
+                                    class="bg-success text-white py-2 w-1/2 font-bold rounded-full hover:bg-primary">Add
+                                    To
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="drawer-side">
+                <label for="my-drawer-4" class="drawer-overlay"></label>
+                <div class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
+                    <div class="form-control">
+                        <label class="label cursor-pointer">
+                            <span class="label-text">Remember me</span>
+                            <input type="checkbox" class="toggle toggle-primary" checked />
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-accent ">
+            <div class="container">
+                <div class="footer py-10 text-white">
+                    <div class="">
+                        <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd" class="fill-current">
+                            <path
+                                d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                            </path>
+                        </svg>
+                        <p>Restaurant Ordering System Ltd.<br>Providing reliable tech since 1992</p>
+                    </div>
+                    <div>
+                        <span class="footer-title">Services</span>
+                        <a class="link link-hover">Branding</a>
+                        <a class="link link-hover">Design</a>
+                        <a class="link link-hover">Marketing</a>
+                        <a class="link link-hover">Advertisement</a>
+                    </div>
+                    <div>
+                        <span class="footer-title">Company</span>
+                        <a class="link link-hover">About us</a>
+                        <a class="link link-hover">Contact</a>
+                        <a class="link link-hover">Jobs</a>
+                        <a class="link link-hover">Press kit</a>
+                    </div>
+                    <div>
+                        <span class="footer-title">Legal</span>
+                        <a class="link link-hover">Terms of use</a>
+                        <a class="link link-hover">Privacy policy</a>
+                        <a class="link link-hover">Cookie policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../js/main.js"></script>
+    </body>
+
+</html>
